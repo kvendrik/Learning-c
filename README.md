@@ -16,7 +16,7 @@ Write a program that stores your age, length and name in variables and prints th
 Write a program that will prompt the user to input ten integer values. The program will display the smallest and greatest of those values. It also displays the value that occur the most. - [Source](http://www.worldbestlearningcenter.com/index_files/c_arrays_pointers_exercises.htm)
 
 #### 4. Matrix
-By using two-dimensional array, write C program to display a matrix as shown below:
+By using two-dimensional array, write C program to display a matrix as shown below: - [Source](http://www.worldbestlearningcenter.com/index_files/c-2D-array-next-exercises.htm)
 ```
  0	 1	 1	 1	 1	 
 -1	 0	 1	 1	 1
