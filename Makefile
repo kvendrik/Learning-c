@@ -5,10 +5,11 @@ CFLAGS=-Wall -g
 default: run
 
 clean:
-	rm ${p}/${p}
+	rm -rf ${p}/bin
 
 build:
-	gcc ${p}/${p}.c -o ${p}/${p}
+	mkdir -p ${p}/bin
+	gcc ${p}/${p}.c -o ${p}/bin/${p}
 
 run: build
-	./${p}/${p}
+	${p}/bin/${p}
