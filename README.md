@@ -49,3 +49,6 @@ By using two-dimensional array, write C program to display a matrix as shown bel
 -1	-1	-1	 0	 1
 -1	-1	-1	-1	 0
 ```
+
+#### 6. Hashing
+Write your own hashing method
