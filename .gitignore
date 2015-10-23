@@ -2,6 +2,9 @@
 
 #####=== C ===#####
 
+*.dSYM
+
+
 # Object files
 *.o
 *.ko
