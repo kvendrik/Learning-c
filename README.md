@@ -2,13 +2,13 @@
 So, learning C as in C not c# c++ or any other wanky thingy, just plain c
 
 #### Usuage
-Build and Run a project: `make p=<project_name>` e.g. `make p=hello-world`
-Build: `make p=<project_name> build`
-Clean up a project dir (removes compiled files): `make p=<project_name> clean`
+* Build and Run a project: `make p=<project_name>` e.g. `make p=hello-world`
+* Build: `make p=<project_name> build`
+* Clean up a project dir (removes compiled files): `make p=<project_name> clean`
 
 #### Usefull links
 * https://gist.github.com/kvendrik/118a1460ef4d46ae6f72
-
+* https://www.youtube.com/results?search_query=cs50+problem+sets&page=&utm_source=opensearch
 
 ## Exercises
 
