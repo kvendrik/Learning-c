@@ -12,4 +12,4 @@ build:
 	gcc ${p}/${p}.c -o ${p}/bin/${p}
 
 run: build
-	${p}/bin/${p}
+	${p}/bin/${p} ${ARGV}
