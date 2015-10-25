@@ -71,11 +71,13 @@ int main(int argc, char *argv[]){
 
 	int y = charIndexTotal * 0.232;
 	int key = (y % strlen(input));
-
 	int salt2Total = (alphCharsCount ^ numbersCount ^ specialCharsCount);
+
+	key = key >> salt2Total;
 
 	printf("%i\n", key);
 	printf("%i\n", salt1Total);
+	printf("%i\n", key + salt1Total);
 
 	printf("%i\n", alphCharsCount);
 	printf("%i\n", numbersCount);
