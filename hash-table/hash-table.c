@@ -20,7 +20,7 @@ Hash hash_add_pair(Hash hash, char key[], char value[], int idx){
 	hash.keys[idx] = malloc(strlen(key)+1);
 	strcpy(hash.keys[idx], key);
 
-	hash.values[idx] = malloc(strlen(value)+1);
+	hash.values[idx] = malloc(strlen(value));
 	strcpy(hash.values[idx], value);
 
 	return hash;
@@ -53,12 +53,8 @@ Hash hash_set(Hash hash, char key[], char value[]){
 
 char *hash_get(Hash hash, char key[]){
 	for(int i = 0; i < hash.size; i++){
-		
-		printf("%s\n", hash.keys[i]);
-		printf("%s\n", hash.values[i]);
-		
-		if(hash.keys[i] == key){
-			printf("%s\n", "Found");
+
+		if(strcmp(hash.keys[i], key) == 0){
 			return hash.values[i];
 		}
 	}
@@ -68,8 +64,11 @@ char *hash_get(Hash hash, char key[]){
 
 
 int main(int argc, char *argv[]){
-	Hash hash = new_hash(1);
+	Hash hash = new_hash(2);
+
 	hash = hash_set(hash, "age", "20");
+	hash = hash_set(hash, "name", "Koen");
 
 	printf("%s\n", hash_get(hash, "age"));
+	printf("%s\n", hash_get(hash, "name"));
 }
